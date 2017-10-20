@@ -34,7 +34,7 @@ body {
 
   -webkit-user-select: auto !important;
   -webkit-user-modify: read-write !important;
-
+font-size: 25px;
  padding: 10px 15px;
    outline: 10px solid #f00;
   background-repeat: no-repeat;
@@ -45,7 +45,7 @@ body {
 blockquote{
 background-color: whitesmoke;
 border-left: 4px solid #999999;
-font-size: 15px;
+font-size: 25px;
 font-weight: 100;
 padding: 10px 15px;
 margin-left: 10px;

@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.ActionMode;
@@ -19,16 +18,13 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.EditText;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 
-import cn.jrhlive.richeditor.RichFunction;
 import cn.jrhlive.richeditor.ui.EditorMarkActivity;
 import cn.jrhlive.richeditor.widgets.bean.FontStyleType;
 import cn.jrhlive.richeditor.widgets.listener.ActionSelectListener;
@@ -89,9 +85,9 @@ public class RichEditorView extends WebView {
         requestFocusFromTouch();
         settings.setPluginState(WebSettings.PluginState.ON);
         //设置适应屏幕
-        settings.setUseWideViewPort(true);
-        settings.setLoadWithOverviewMode(true);
-        settings.setNeedInitialFocus(true);
+//        settings.setUseWideViewPort(true);
+//        settings.setLoadWithOverviewMode(true);
+//        settings.setNeedInitialFocus(true);
         //支持自动加载图片
         if (Build.VERSION.SDK_INT >= 19) {
             settings.setLoadsImagesAutomatically(true);

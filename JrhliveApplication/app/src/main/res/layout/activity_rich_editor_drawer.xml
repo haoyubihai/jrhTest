@@ -8,7 +8,10 @@
     tools:context=".richeditor.ui.RichEditorActivity"
     tools:openDrawer="start">
 
-   <include layout="@layout/activity_rich_editor"/>
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       layout="@layout/activity_rich_editor"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/right_recycler"
         android:layout_gravity="end"
